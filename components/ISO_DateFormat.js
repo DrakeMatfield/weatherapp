@@ -1,4 +1,4 @@
-﻿// JScript File
+// JScript File
 // JScript File
 "use strict"
 // This object only parse this format: Wed, 11 Apr 2018 11:46 AM CDT

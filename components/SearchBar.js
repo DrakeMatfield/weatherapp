@@ -1,4 +1,4 @@
-﻿import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Text, View, Button, TextInput, StyleSheet, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'; // 4.2.0
 

@@ -1,4 +1,4 @@
-﻿// JScript File
+// JScript File
 // JScript File
 "use strict"
 import {Date_Time} from "./ISO_DateFormat.js";
@@ -32,6 +32,7 @@ function Units(distance, pressure, speed, temperature) {
   this.Distance_units = distance;
   this.Pressure_units = pressure;
   this.Speed_units = speed;
+  this.Temperature_units_def = temperature;
   this.Temperature_units = get_temperature_unit(temperature);
 }
 

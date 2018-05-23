@@ -1,4 +1,4 @@
-﻿import React, { Component } from 'react';
+import React, { Component } from 'react';
 import {
   Text,
   View,
@@ -11,24 +11,27 @@ import {
 export default class TabButtons extends Component {
   _handleButtonPressToday = () => {
     Alert.alert('Button Today!', 'You did it!');
+  
+       this.props.tabClick("Today");
   };
 
   _handleButtonPressForecast = () => {
     Alert.alert('Button Forecast!', 'You did it!');
+     this.props.tabClick("Forecast");
   };
 
   _handleButtonPressNotification = () => {
     Alert.alert('Button Notification!', 'You did it!');
+     this.props.tabClick("Notification");
   };
 
   render() {
     return (
       <View style={styles.tab}>
-
         <TouchableOpacity
           onPress={this._handleButtonPressToday}
           style={[styles.tablinks, styles.tabSpace]}>
-          
+
           <Text style={styles.tabText}>
             Today
           </Text>
@@ -49,23 +52,6 @@ export default class TabButtons extends Component {
             Notification
           </Text>
         </TouchableOpacity>
-     {/* <Button
-        title="Today"
-        onPress={this._handleButtonPressToday}
-        style={[styles.tablinks, styles.tabSpace]}
-      />
-    
-      <Button
-        title="Forecast"
-        onPress={this._handleButtonPressForecast}
-         style={[styles.tablinks, styles.tabSpace]}
-      />
-    
-      <Button
-        title="Notification"
-        onPress={this._handleButtonPressNotification}
-         style={[styles.tablinks, styles.tabSpace]}
-      />*/}
       </View>
     );
   }
@@ -92,6 +78,6 @@ const styles = StyleSheet.create({
   tabText: {
     //width: 33%,
     color: '#777777',
-     //alignContent: 'center',
+    //alignContent: 'center',
   },
 });

@@ -1,4 +1,4 @@
-﻿// JScript File
+// JScript File
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import SearchBar from './SearchBar';
@@ -8,8 +8,8 @@ export default class Header extends Component {
   render() {
     return (
       <View style={styles.container}>
-       <SearchBar on_Submit={this.props.on_Submit} />
-        <TabButtons />
+        <SearchBar on_Submit={this.props.on_Submit} />
+        <TabButtons tabClick={this.props.tabClick} />
       </View>
     );
   }
@@ -30,4 +30,3 @@ const styles = StyleSheet.create({
     //height: 100%;
   },
 });
-
